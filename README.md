@@ -10,6 +10,8 @@ This is the repository that you should use for your term project. It does not ha
 * Ensure Pycharm is installed: https://www.jetbrains.com/pycharm/download/?section=windows
 * Ensure Git is installed: https://git-scm.com/downloads
 
+If you needed to install Python or Git, you'll need to restart your computer before continuing.
+
 ## Steps to get this django application running on your own PC
 
 Note that the lab computers may have vim as a default editor for commits. Vim can be scary. I recommend using nano. 
@@ -32,8 +34,11 @@ Note that the lab computers may have vim as a default editor for commits. Vim ca
 ## Mandatory Configuration Steps
 
 1. Create a new **Django App** by running `python manage.py startapp <app_name>`. The app name should be relevant to the purpose of your project: e.g. `workouttracker` for a workout tracker.
-2. Commit and push your changes. You can do this by running the following commands: `git add .`, `git commit -m "add django app"`, `git commit`, `git push origin main`
+2. Commit and push your changes. After doing this, verify that your changes have been made on GitHub. You can commit and push by running the following commands: 
+    * `git add .` (stage all modified files for commit)
+    * `git commit -m "add django app"` (take snapshot of changes with message "add django app")
+    * `git push origin main` (push new snapshots to GitHub)
 3. Add the app to your list of INSTALLED_APPS in your `settings.py`
 4. Create a `urls.py` in your app, and configure the `urls.py` in your project to include your app's `urls.py`
-5. Create a simple "hello world" view
-6. Commit and push your changes
+5. Create a simple "hello world" view - if someone makes a request to `127.0.0.1:8000/`, they should get an HTTP Response that says "Hello World!"
+6. Commit and push your changes again
