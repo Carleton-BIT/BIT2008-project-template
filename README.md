@@ -24,7 +24,7 @@ Note that the lab computers may have vim as a default editor for commits. Vim ca
 ![install dependencies](readme_assets/run-terminal.jpg)
 5) Create a file called `.env` in the top level directory (should be in the same folder as manage.py)
 6) Generate a secret key by running `python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'` in the terminal. Copy the output.
-7) Edit `.env` (created in part 6) with a text editor like notepad, and add a line that says `SECRET_KEY="your-secret-key-here"`. Paste the output from part 10 into 'your-secret-key-here'.
+7) Edit `.env` (created in part 5) and add a line that says `SECRET_KEY="your-secret-key-here"`. Paste the output from part 6 into 'your-secret-key-here'.
 8) On the terminal, run `python manage.py migrate`
 9) Run the server by clicking the play button or running `python manage.py runserver` on the terminal
 10) Navigate to 127.0.0.1:8000! You should get a success message in your web browser.
